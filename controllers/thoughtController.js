@@ -1,4 +1,3 @@
-const { rmSync } = require('fs');
 const { Thought, User } = require('../models');
 
 module.exports = {
@@ -54,7 +53,7 @@ module.exports = {
             });
     },
     deleteThought(req, res) {
-        Thought.findByIdAndRemove(
+        Thought.findOneAndRemove(
             { _id: req.params.thoughtId }
         )
             .then ((thought) => 
