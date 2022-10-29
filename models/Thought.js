@@ -3,7 +3,6 @@ const {
     model,
     Types
 } = require('mongoose');
-const reactionSchema = require('./Reactions');
 
 const thoughtSchema = new Schema(
     {
