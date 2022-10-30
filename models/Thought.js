@@ -1,8 +1,4 @@
-const { 
-    Schema, 
-    model,
-    Types
-} = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const thoughtSchema = new Schema(
     {
@@ -16,7 +12,7 @@ const thoughtSchema = new Schema(
             type: Date,
             default: Date.now,
         },
-        username: {
+        userId: {
             type: String,
             required: true,
         },

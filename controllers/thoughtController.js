@@ -1,13 +1,16 @@
-const Thought = require("../models/Thought");
+const { Thought, User } = require('../models');
 
 module.exports = {
     getThought(req, res) {
         Thought.find()
+            .select("-___v")
+            .sort({ _id: -1 })
             .then((thoughts) => res.json(thoughts))
             .catch((err) => res.status(500).json(err)) 
     },
     getSingleThought(req, res) {
         Thought.findOne({ _id: req.params.thoughtId })
+            .select("-___v")
             .then((thought) => 
                 !thought
                     ? res.status(400).json({ message: 'No thought with this ID' })
@@ -17,10 +20,10 @@ module.exports = {
     },
     createThought(req, res) {
         Thought.create(req.body)
-            .then(({ _id }) => {
+            .then(( thoughts ) => {
                 return User.findOneAndUpdate(
-                    { username: req.body.username },
-                    { $push: { thoughts: _id } },
+                    { _id: req.body.userId },
+                    { $addToSet: { thoughts: thought.id } },
                     { new: true }
                 );
             })
@@ -29,7 +32,7 @@ module.exports = {
                 ? res.status(404).json({
                     message: 'Thought was created, but found no user with that ID',
                 })
-                : res.json('Create the thought')
+                : res.json('Thought was created!')
             )
             .catch((err) => {
                 console.log(err);
@@ -53,10 +56,8 @@ module.exports = {
             });
     },
     deleteThought(req, res) {
-        Thought.findOneAndDelete(
-            { _id: req.params.thoughtId }
-        )
-            .then ((thought) => 
+        Thought.findOneAndDelete({ _id: req.params.thoughtId })
+            .then((thought) => 
                 !thought
                     ? res.status(404).json({ message: 'No thought with this ID' })
                     : User.findOneAndUpdate(
