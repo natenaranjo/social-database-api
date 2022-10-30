@@ -38,7 +38,7 @@ module.exports = {
             { runValidators: true, new: true }
         )
             .then((dbUserData) => 
-                !user
+                !User
                     ? res.status(404).json({ message: 'No user was found with this ID' })
                     : res.json(dbUserData)
         )
