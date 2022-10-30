@@ -6,6 +6,10 @@ const reactionSchema = new Schema (
             type: Schema.Types.ObjectId,
             default: () => new Types.ObjectId(),
         },
+        createdAt: {
+            type: Date,
+            default: Date.now,
+        },
         reactionBody: {
             type: String,
             required: true,
@@ -15,10 +19,6 @@ const reactionSchema = new Schema (
         username: {
             type: String,
             required: true,
-        },
-        createdAt: {
-            type: Date,
-            default: Date.now,
         },
     },
     {
