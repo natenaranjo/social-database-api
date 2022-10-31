@@ -15,7 +15,7 @@
     Explore the document by the links below:
     <br />
     <br />
-    <a href="https://techblogofnate.herokuapp.com"><strong>Watch Demo »</strong></a>
+    <a href="https://watch.screencastify.com/v/JmbQkSzD5UduvjHJOKc7"><strong>Watch Demo »</strong></a>
     <br />
     <br />
     <a href="https://github.com/natenaranjo/social-database-api">Explore the docs </a>
@@ -50,7 +50,9 @@
 
 [![Project Screenshot][project-screenshot]](https://github.com/natenaranjo/social-database-api)
 
-Create an API for social networks to utilize MongoDB to store information.  
+Here I learned how to write a NoSQL Database using MongoDB and Mongoose to create a Social Network Database API.  This project challenged me on building a database with the following tools:
+
+[![NodeJs](https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original.svg)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -58,6 +60,24 @@ Create an API for social networks to utilize MongoDB to store information.
 
 ## Installation
 
+To install please clone the repo and open up in VSCODE or any editor of your choice.
+
+
+To install all the necessary dependencies please run the following:
+> npm install
+
+To start the application:
+> npm run start
+
+Open up Insomnia use the following below to access the database:
+
+Make sure to set the port to what you run in the Server.js.
+
+- Users
+  > http://localhost:3001/api/users/
+
+- Thoughts
+  > http://localhost:3001/api/thoughts
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -75,14 +95,14 @@ Create an API for social networks to utilize MongoDB to store information.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] When I enter the command to invoke the application
-  - [ ] The server is started and the Mongoose models are synced to the MongoDB database.
-- [ ] When I open the API GET routes in Insomia for users and thoughts
-  - [ ] The data for each of these routes is displayed in a formated json.
-- [ ] When I test API POST, PUT, and DELETE routes in Insomia
-  - [ ] I am able to successfully create, update, and delete users and thoughts in my database.
-- [ ] When I test API POST and DELETE routes in Insomina
-  - [ ] I am able to successfully create and delete reactions to thoughts and add and remove friends to a user.
+- [x] When I enter the command to invoke the application
+  - [x] The server is started and the Mongoose models are synced to the MongoDB database.
+- [x] When I open the API GET routes in Insomia for users and thoughts
+  - [x] The data for each of these routes is displayed in a formated json.
+- [x] When I test API POST, PUT, and DELETE routes in Insomia
+  - [x] I am able to successfully create, update, and delete users and thoughts in my database.
+- [x] When I test API POST and DELETE routes in Insomina
+  - [x] I am able to successfully create and delete reactions to thoughts and add and remove friends to a user.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,3 +146,4 @@ Create an API for social networks to utilize MongoDB to store information.
 [project-screenshot-3]: ./public/img/screenshot-3.png
 [project-screenshot-4]: ./public/img/screenshot-4.png
 [project-screenshot-5]: ./public/img/screenshot-5.png
+[NodeJs-url]: https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original.svg
