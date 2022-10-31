@@ -52,7 +52,14 @@
 
 Here I learned how to write a NoSQL Database using MongoDB and Mongoose to create a Social Network Database API.  This project challenged me on building a database with the following tools:
 
-[[![NodeJs][NodeJs-url]]
+<div align="center">
+
+<h2 align="center">Built with:</h2>
+<img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original.svg" width="50" height="50">
+<img src="https://github.com/devicons/devicon/blob/master/icons/express/express-original.svg" width="50" height="50">
+<img src="https://github.com/devicons/devicon/blob/master/icons/mongodb/mongodb-original.svg" width="50" height="50">
+
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
