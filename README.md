@@ -51,9 +51,7 @@
 [![Project Screenshot][project-screenshot]](https://github.com/natenaranjo/social-database-api)
 
 Here I learned how to write a NoSQL Database using MongoDB and Mongoose to create a Social Network Database API.  This project challenged me on building a database with the following tools:
-
 <div align="center">
-
 <h2 align="center">Built with:</h2>
 <img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original.svg" width="50" height="50">
 <img src="https://github.com/devicons/devicon/blob/master/icons/express/express-original.svg" width="50" height="50">
@@ -102,13 +100,13 @@ Make sure to set the port to what you run in the Server.js.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] When I enter the command to invoke the application
+- When I enter the command to invoke the application
   - [x] The server is started and the Mongoose models are synced to the MongoDB database.
-- [x] When I open the API GET routes in Insomia for users and thoughts
+- When I open the API GET routes in Insomia for users and thoughts
   - [x] The data for each of these routes is displayed in a formated json.
-- [x] When I test API POST, PUT, and DELETE routes in Insomia
+- When I test API POST, PUT, and DELETE routes in Insomia
   - [x] I am able to successfully create, update, and delete users and thoughts in my database.
-- [x] When I test API POST and DELETE routes in Insomina
+- When I test API POST and DELETE routes in Insomina
   - [x] I am able to successfully create and delete reactions to thoughts and add and remove friends to a user.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -148,7 +146,7 @@ Make sure to set the port to what you run in the Server.js.
 [issues-url]: https://github.com/natenaranjo/social-database-api/issues
 [license-shield]: https://img.shields.io/github/license/natenaranjo/social-database-api.svg?style=for-the-badge
 [license-url]: https://github.com/natenaranjo/social-database-api/blob/master/LICENSE.txt
-[project-screenshot]: ./public/img/screenshot.png
+[project-screenshot]: ./public/img/social-database-api.gif
 [project-screenshot-2]: ./public/img/screenshot-2.png
 [project-screenshot-3]: ./public/img/screenshot-3.png
 [project-screenshot-4]: ./public/img/screenshot-4.png
